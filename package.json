@@ -1,0 +1,38 @@
+{
+  "name": "license-disc-decode",
+  "description": "Decode barcode string when scanning License disc",
+  "version": "1.0.0",
+  "license": "MIT",
+  "source": "src/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "test": "jest",
+    "lint": "standard --fix"
+  },
+  "dependencies": {
+    "vin-decode": "^0.2.0"
+  },
+  "keywords": [
+    "barcode",
+    "vin",
+    "registration",
+    "license",
+    "dist"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.8.0",
+    "@babel/preset-env": "^7.8.2",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "microbundle": "^0.11.0",
+    "standard": "^14.3.1"
+  },
+  "standard": {
+    "env": {
+      "jest": true
+    }
+  }
+}
